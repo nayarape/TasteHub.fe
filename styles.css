@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 75vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+/* Título do cabeçalho */
+header {
+    background-color: #df1c1c; /* Tom de vermelho */
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    color: #ffeb3b; /* Tom de amarelo */
+    font-size: 50px;
+}
+
+/* Conteúdo da página */
+.container {
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Seções lado a lado */
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+section {
+    background-color: #2a2a2a;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 31%; /* Ajustado para dar mais espaço */
+    min-width: 280px; /* Garantindo que as seções não fiquem muito pequenas em telas menores */
+    max-width: 400px; /* Limitando a largura máxima */
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #ffeb3b; /* Tom de amarelo */
+}
+
+button {
+    background-color: #ff4d4d; /* Tom de vermelho */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e63946;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+li {
+    background-color: #2a2a2a;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 80%;
+    }
+}
+
+
+footer {
+    background-color: #1c1c1c;
+    color: #ffeb3b; 
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}

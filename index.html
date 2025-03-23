@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TASTE HUB</h1>
+    </header>
+    <div class="content">
+        <section id="restaurantes">
+            <h2>Restaurantes</h2>
+            <button onclick="getRestaurantes()">Carregar Restaurantes</button>
+            <ul id="restaurantes-list"></ul>
+        </section>
+        
+        <section id="avaliacoes">
+            <h2>Avaliações</h2>
+            <button onclick="getAvaliacoes()">Carregar Avaliações</button>
+            <ul id="avaliacoes-list"></ul>
+        </section>
+        
+        <section id="usuarios">
+            <h2>Usuários</h2>
+            <button onclick="getUsuarios()">Carregar Usuários</button>
+            <ul id="usuarios-list"></ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Avaliação de Restaurantes</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
